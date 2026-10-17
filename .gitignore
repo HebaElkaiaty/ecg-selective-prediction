@@ -1,0 +1,37 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+.pytest_cache/
+build/
+dist/
+wheels/
+*.egg-info
+
+# macOS
+.DS_Store
+
+# Virtual environments
+.venv
+.python-version
+
+# datasets — ignore large binary waveforms, keep CSVs
+data/ptbxl/records100/
+data/ptbxl/records500/
+
+# Model outputs — trained logits and checkpoints (can be GB-scale)
+outputs/
+checkpoints/
+*.pkl
+*.pt
+*.pth
+
+# Experiment results — regenerable from outputs/
+results/
+
+# Jupyter artifacts
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# Logs
+*.log
+wandb/
